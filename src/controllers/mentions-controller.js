@@ -14,6 +14,7 @@ exports.listMentions = async (req, res) => {
 // create
 exports.createMention = async (req, res) => {
   try {
+      console.log (req.body)
     const mention = new Mentions({
       friend: req.body.friend,
       mention: req.body.mention
@@ -25,6 +26,7 @@ exports.createMention = async (req, res) => {
 
     res.status(201).send({message: 'Menção cadastrada com sucesso!'});
   } catch (e) {
+      console.log("okwxxcd,c,", e)
     res.status(500).send({message: 'Falha ao cadastrar a menção.'});
   }
 };
