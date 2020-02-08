@@ -1,0 +1,4 @@
+### node _modules tem arquivos pesados desnecessários para subir pro repositorio
+### .env porque possui arquivos sensiveis para acesso como senha
+node_modules
+.env
